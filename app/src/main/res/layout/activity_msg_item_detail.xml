@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MsgItemDetail"
+    android:orientation="vertical">
+
+    <Toolbar
+        android:id="@+id/msg_interface_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimaryDark"
+        android:titleTextColor="@android:color/background_light">
+
+        <Button
+            android:id="@+id/msg_interface_back_item"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="left"
+            android:background="@drawable/back_icon" />
+
+        <TextView
+            android:id="@+id/msg_item_detail_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@android:color/background_light" />
+    </Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/msg_interface_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="40dp" />
+<LinearLayout
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_gravity="bottom"
+    android:orientation="horizontal">
+
+    <EditText
+        android:background="@null"
+        android:id="@+id/msg_interface_edit_text"
+        style="@android:style/Widget.Material.Light.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="3" />
+
+    <Button
+        android:id="@+id/msg_interface_send"
+        style="@android:style/Widget.Material.Button.Borderless"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="right|center"
+        android:background="@drawable/send_button"/>
+</LinearLayout>
+</FrameLayout>

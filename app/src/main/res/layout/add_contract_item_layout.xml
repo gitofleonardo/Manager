@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center"
+        android:src="@drawable/contracticon" />
+
+    <TextView
+        android:id="@+id/add_a_contact_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginLeft="50dp"
+        android:text="黄承喜" />
+
+    <TextView
+        android:id="@+id/add_a_contact_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="50dp"
+        android:text="18376041995" />
+
+    <CheckBox
+        android:id="@+id/add_a_contact_item_checkbox"
+        style="@android:style/Widget.Material.CompoundButton.CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:checked="false" />
+
+</FrameLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddAContract">
+    <Toolbar
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/add_a_contact_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <Button
+            android:background="@drawable/back_icon"
+            android:id="@+id/add_a_contact_back_to_interface"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </Toolbar>
+
+    <ImageView
+        android:layout_marginTop="80dp"
+        android:src="@drawable/contracticon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+            android:id="@+id/add_a_contact_name"
+            android:layout_marginRight="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="姓名"/>
+    <EditText
+        android:hint="号码"
+        android:id="@+id/add_a_contact_number"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:clickable="false"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/conform_icon"
+        android:layout_gravity="bottom|center"
+        android:id="@+id/add_a_contact_conform_info_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmptySendMsg"
+    android:orientation="vertical">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimaryDark">
+        <Button
+            android:id="@+id/msg_empty_back_item"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="left"
+            android:background="@drawable/back_icon" />
+        <Button
+            android:layout_marginRight="10dp"
+            android:background="@drawable/add_one_icon"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_gravity="right"
+            android:id="@+id/add_a_contact"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+        <EditText
+            android:background="@null"
+            android:maxLines="1"
+            android:id="@+id/numbers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </Toolbar>
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/msg_empty_rec_view"
+    android:layout_marginTop="40dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <EditText
+            android:background="@null"
+            android:id="@+id/msg_empty_edit_text"
+            style="@android:style/Widget.DeviceDefault.Light.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="3" />
+
+        <Button
+            android:id="@+id/msg_empty_send"
+            style="@android:style/Widget.Material.Button.Borderless"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="right|center"
+            android:background="@drawable/send_button"
+            android:gravity="center" />
+    </LinearLayout>
+</FrameLayout>

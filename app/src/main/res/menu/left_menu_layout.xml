@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/contacts"
+        android:title="联系人" />
+    <item
+        android:id="@+id/msg"
+        android:title="短信"/>
+    <item
+        android:id="@+id/call_record"
+        android:title="通话记录"/>
+</menu>

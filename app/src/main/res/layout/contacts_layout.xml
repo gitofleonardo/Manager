@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/contacts_layout">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/contacts_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical" />
+    <android.support.design.widget.FloatingActionButton
+        android:src="@drawable/add_one_icon"
+        android:id="@+id/add_a_contact_button"
+        android:layout_margin="20dp"
+        android:layout_gravity="right|bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</FrameLayout>
